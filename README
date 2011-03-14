@@ -1,1 +1,28 @@
-DoSNet is a basic BotNet Master/Slave.  Its use is strictly for educational purposes.  It is not resilient in anyway and should be used strictly for observing the core concepts of botnet communication.
+DoSNet is a basic BotNet Master/Slave. 
+Its use is strictly for educational purposes.  
+It is not resilient in anyway and should be used strictly 
+for observing the core concepts of botnet communication.
+
+To use this program, python 2.6+ is required.
+
+This will strictly perform Denial of Service attacks
+against web servers on port 80.
+
+To run this ->
+
+Slaves:
+Give each file executable permissions
+./botSlave.py to run the slave
+
+Master:
+Give the master executable permissions
+
+Under the area (array) "addresses", change the values '127.0.0.1', 
+to slave addresses (it supports more than 2)
+
+Under target, change the IP to a url (no http://) or a valid IP.
+
+When ready...
+./botMaster.py
+
+The clients will receive the request and begin attacking

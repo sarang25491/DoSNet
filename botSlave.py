@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import socket,urllib2
 
 def _dosAddr_(target):
