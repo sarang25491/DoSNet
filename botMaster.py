@@ -8,5 +8,3 @@ master = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 for host in addresses:
 	master.connect((host,port))
 	master.send(target)
-	data = master.recv(1024)
-	master.close()
