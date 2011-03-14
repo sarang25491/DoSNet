@@ -17,5 +17,6 @@ while 1:
 	if not data: break
 	print "Received target "+data
 	print "Launching DoS against "+data
+	slave.close()
 	_dosAddr_(data)
-slave.close()
+
